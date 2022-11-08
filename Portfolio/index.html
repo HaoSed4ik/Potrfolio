@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/main/style.css">
+  <title>Portfolio</title>
+  <script>
+    //Функция показа
+      function show(state)
+      {
+      document.getElementById('window').style.display = state;	
+      document.getElementById('gray').style.display = state; 		
+      }	
+    </script>   
+</head>
+<body>
+  <div class="header">
+    <ul>
+      <li><a href="#footer">Works</a></li>
+      <li><a href="#"><button onclick="show('block')" class="regButton">Contact</button></a></li>
+    </ul>
+    <div onclick="show('none')" id="gray"></div>
+    <div id="window">
+        <!-- Картинка крестика -->
+        <img class="close" src="assets/img/closewhite.png" width="15px" height="15px" alt=""  onclick="show('none')">
+        <div class="form">
+            <h2>Contact with me</h2>
+            <form action="index.html" name="f1">
+                <input type="text" placeholder="Ваше имя" name="name1" class="input">
+                <input type="text" placeholder="Ваша фамилия" name="name2" class="input">
+                <input type="email" placeholder="Ваш Email" name="email1" class="input">
+                <input type='tel' placeholder="Ваш мобильный телефон" name="tel" class="input">
+                <button class="input_btn">Связаться</button><br>
+                <div class="input_img"><a href="mailto:hao.sed@yandex.ru" target="_blank"><img src="assets/img/emailwhite.png" alt="Email" width="50px"></a>
+                <a href=""><img src="assets/img/whatsappwhite.png" alt="Whats App" width="50px"></a>
+                <a href="https://github.com/HaoSed4ik" target="_blank"><img src="assets/img/githubwhite.png" alt="GitHub" width="50px"></a>
+                <a href="https://t.me/HaoSed" target="_blank"><img src="assets/img/telegramwhite.png" alt="Telegram" width="50px"></a>
+                <a href=""><img src="assets/img/instagramwhite.png" alt="Instagram" width="50px"></a></div>
+            </form>
+        </div>
+    </div>
+    <div class="person">
+      <img src="assets/img/person.png" alt="Person" width="500px" height="500px"></div>
+    <h1>Hi, i’m Aik,<br>
+      FrontEnd Developer</h1>
+      <p>Я Айк, в настоящее время я работаю FrontEnd Developer, больше всего я 
+        специлизируюсь в вёрстке.</p>
+        <div class="images">
+            <a href="mailto:hao.sed@yandex.ru" target="_blank"><img src="assets/img/emailwhite.png" alt="Email" width="50px"></a>
+            <a href=""><img src="assets/img/whatsappwhite.png" alt="Whats App" width="50px"></a>
+            <a href="https://github.com/HaoSed4ik" target="_blank"><img src="assets/img/githubwhite.png" alt="GitHub" width="50px"></a>
+            <a href="https://t.me/HaoSed" target="_blank"><img src="assets/img/telegramwhite.png" alt="Telegram" width="50px"></a>
+            <a href=""><img src="assets/img/instagramwhite.png" alt="Instagram" width="50px"></a>
+          </div>
+        </div>
+
+  <div class="main">
+    <div class="names">
+    <ul>
+      <li>Skills</li>
+      <li>Education</li>
+    </ul>
+  </div>
+    <div class="box1">
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>GIT</li>
+        <li>Figma</li>
+      </ul>
+    </div>
+    <div class="box2">
+      <ul class="skills2">
+        <li>SkillBox</li>
+        <li>FructCode</li>
+        <li>Coddy</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="container footer--container">
+        <div class="sites">
+            <div class="site__item">
+                <img src="assets/img//01.png" alt="01">
+                <div class="site__content">
+                    <h1 class="site__title">КиноМир 2022</h1>
+                    <p class="site__descr">
+                        Данный проект входил как прохождение курса по верстке, в 
+                        этом проекте я создал сайт на подобие “КиноПоиск”, а так же
+                        адаптировал его под мобильные телефоны.
+                    </p>
+                    <h2 class="site__used-to-create">
+                        При создании сайта использовалось:
+                        <span>
+                            <img src="assets/img/circle.svg" alt="Circle" class="circle">
+                            HTML5
+                        </span>
+                        <span>
+                            <img src="assets/img/circle.svg" alt="Circle" class="circle">
+                            CSS3
+                        </span>
+                    </h2>
+                </div>
+            </div>
+            <div class="site__item">
+                <img src="assets/img/02.png" alt="02">
+                <div class="site__content">
+                    <h1 class="site__title">Pixel Watch <br> 2022</h1>
+                    <h2 class="site__used-to-create">
+                        При создании сайта использовалось:
+                        <span>
+                            <img src="assets/img/circle.svg" alt="Circle" class="circle">
+                            HTML5
+                        </span>
+                        <span>
+                            <img src="assets/img/circle.svg" alt="Circle" class="circle">
+                            CSS3
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <a href="mailto:hao.sed@yandex.ru" target="_blank"><img src="assets/img/email.svg" alt=""></a>
+            <a href="#" target="_blank"><img src="assets/img/whatsapp.svg" alt=""></a>
+            <a href="https://github.com/HaoSed4ik" target="_blank"><img src="assets/img/github.svg" alt=""></a>
+            <a href="https://t.me/HaoSed" target="_blank"><img src="assets/img/telegram.svg" alt=""></a>
+            <a href="#" target="_blank"><img src="assets/img/instagram.svg" alt=""></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
